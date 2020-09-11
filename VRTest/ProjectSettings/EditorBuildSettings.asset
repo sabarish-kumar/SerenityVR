@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/ProceduralChunks.unity
-    guid: ef697f13c031a2e498f3c98ef8f4429f
+    path: Assets/Scenes/ProceduralChunksWObs1.unity
+    guid: 1253e439361e1a347bc5a43f301d37f1
   m_configObjects: {}

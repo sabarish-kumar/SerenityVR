@@ -32,6 +32,10 @@ public class LevelLayoutGenerator : MonoBehaviour
         {
             PickAndSpawnChunk();
         }
+        /*if (OVRInput.RawButton.A)
+        {
+            PickAndSpawnChunk();
+        }*/
     }
 
     void Start()
