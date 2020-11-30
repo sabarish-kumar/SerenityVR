@@ -39,6 +39,8 @@ public class Climber : MonoBehaviour
         if (currentHand)
             currentHand.ReleasePoint();
 
+
+
         currentHand = hand;
     }
 

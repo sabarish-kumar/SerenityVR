@@ -2,38 +2,37 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;
 using UnityEngine.SceneManagement;
 public class ScoringSystem : MonoBehaviour
 {
     public GameObject scoreText;
-    public GameObject fuelText;
-    public GameObject healthText;
+    public GameObject strText;
+
     public static float theScore;
-    public static float theFuel=100;
-    public static float theHealth = 100;
+    public static float theTime = 100;
+
     private float scorePerSec = 10f;
-    private float fuelPerSec = 10f;
-    private float healthPerSec = 1f;
+    private float timePerSec = 2f;
+
 
     void Update()
     {
         theScore += scorePerSec * Time.deltaTime;
-        scoreText.GetComponent<TextMeshProUGUI>().text = "Score : " + (int)theScore;
-        
-        theFuel -= fuelPerSec * Time.deltaTime;
-        fuelText.GetComponent<TextMeshProUGUI>().text = "Fuel : " + (int)theFuel;
-        GameOverCheck(); 
+        scoreText.GetComponent<UnityEngine.UI.Text>().text = "Score : " + (int)theScore;
 
-        /*healthText.GetComponent<TextMeshProUGUI>().text = "Health : " + (int)theHealth;
-        Debug.Log(theHealth);*/
+        theTime -= timePerSec * Time.deltaTime;
+        strText.GetComponent<UnityEngine.UI.Text>().text = "Time : " + (int)theTime;
+        GameOverCheck();
+
+        
+
     }
 
     public void GameOverCheck()
     {
-        if (theFuel <= 0 || theHealth <= 0)
+        if (theTime <= 0)
         {
-            SceneManager.LoadScene("GameOver");
+            Application.Quit(); 
         }
     }
 }

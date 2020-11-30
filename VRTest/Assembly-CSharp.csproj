@@ -393,7 +393,6 @@
     <Compile Include="Assets\Scripts\Climber.cs" />
     <Compile Include="Assets\Scripts\DayNightController.cs" />
     <Compile Include="Assets\Scripts\Hand.cs" />
-    <Compile Include="Assets\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Scripts\MaterialGetter.cs" />
     <Compile Include="Assets\Scripts\PlayButton.cs" />
     <Compile Include="Assets\Scripts\ProceduralGenerationScripts\CarTag.cs" />

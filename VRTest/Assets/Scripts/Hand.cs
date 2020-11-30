@@ -8,7 +8,8 @@ public class Hand : MonoBehaviour
     public OVRInput.Controller controller = OVRInput.Controller.None;
     //public Material[] mat;
     public Vector3 Delta { private set; get; } = Vector3.zero;
-    public AudioSource grabSound;
+    private AudioSource source;
+    public AudioClip grabSound;
 
     private Vector3 lastPosition = Vector3.zero;
 
@@ -49,14 +50,15 @@ public class Hand : MonoBehaviour
     private void GrabPoint()
     {
         currentPoint = Utility.GetNearest(transform.position, contactPoints);
-        
+        ScoringSystem.theTime += 5;
 
         if (currentPoint)
         {
             climber.SetHand(this);
             meshRenderer.enabled = false;
             //matRenderer.sharedMaterial = 
-            grabSound.Play();
+            source.PlayOneShot(grabSound);
+            
         }
     }
 
