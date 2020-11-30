@@ -8,6 +8,7 @@ public class Hand : MonoBehaviour
     public OVRInput.Controller controller = OVRInput.Controller.None;
     //public Material[] mat;
     public Vector3 Delta { private set; get; } = Vector3.zero;
+    public AudioSource grabSound;
 
     private Vector3 lastPosition = Vector3.zero;
 
@@ -15,6 +16,7 @@ public class Hand : MonoBehaviour
     private List<GameObject> contactPoints = new List<GameObject>();
     private MeshRenderer meshRenderer = null;
     //private MeshRenderer matRenderer;
+
 
     private void Awake()
     {
@@ -54,6 +56,7 @@ public class Hand : MonoBehaviour
             climber.SetHand(this);
             meshRenderer.enabled = false;
             //matRenderer.sharedMaterial = 
+            grabSound.Play();
         }
     }
 

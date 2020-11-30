@@ -146,11 +146,11 @@
     <None Include="Assets\Oculus\VR\Plugins\placeholder.txt" />
     <None Include="Assets\Oculus\VR\NOTICE.txt" />
     <None Include="Assets\Oculus\VR\Resources\Unlit Transparent Color.shader" />
-    <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/sabar/Documents/GitHub/My GitHub repository/SerenityVR/SerenityVR/VRTest/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>C:/Users/sabar/Documents/GitHub/My GitHub repository/SerenityVR/SerenityVR/VRTest/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>C:/Users/sabar/Documents/GitHub/My GitHub repository/SerenityVR/SerenityVR/VRTest/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.3.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
